@@ -46,3 +46,4 @@ derive_builder = "0.20"
 inventory = "0.3"
 uuid = { version = "1", features = ["v4"] }
 url = "2"
+directories = "6.0"
