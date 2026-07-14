@@ -19,3 +19,6 @@
 [submodule "crates/download-manager"]
 	path = crates/download-manager
   url = https://github.com/bottlesdevs/download-manager.git
+[submodule "crates/fvs2-rs"]
+	path = crates/fvs2-rs
+	url = https://github.com/bottlesdevs/fvs2-rs.git

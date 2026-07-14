@@ -161,8 +161,10 @@ name = "bottles-core"
 version = "0.1.0"
 dependencies = [
  "derive_builder",
+ "fvs-rs",
  "next-config",
  "prost",
+ "prost-types",
  "serde",
  "serde_json",
  "thiserror",
@@ -172,6 +174,8 @@ dependencies = [
  "tonic-prost",
  "tonic-prost-build",
  "tracing",
+ "url",
+ "uuid",
 ]
 
 [[package]]
@@ -509,6 +513,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f90f7dce0722e95104fcb095585910c0977252f286e354b5e3bd38902cd99988"
 
 [[package]]
+name = "futures-timer"
+version = "3.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "af43fadb8a98512d547e37b4e92e0ced13e205c061b87b4623eff01d918d6968"
+
+[[package]]
 name = "futures-util"
 version = "0.3.31"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -523,6 +533,20 @@ dependencies = [
  "pin-project-lite",
  "pin-utils",
  "slab",
+]
+
+[[package]]
+name = "fvs-rs"
+version = "0.1.0"
+dependencies = [
+ "futures-timer",
+ "prost",
+ "prost-types",
+ "thiserror",
+ "tonic",
+ "tonic-health",
+ "tonic-prost",
+ "tonic-prost-build",
 ]
 
 [[package]]
@@ -2116,6 +2140,7 @@ checksum = "bf80a72845275afea99e7f2b434723d3bc7e38470fcd1c7ed39a599c73319a53"
 dependencies = [
  "getrandom 0.4.3",
  "js-sys",
+ "serde_core",
  "wasm-bindgen",
 ]
 
