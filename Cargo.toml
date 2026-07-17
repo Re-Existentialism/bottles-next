@@ -51,3 +51,6 @@ inventory = "0.3"
 uuid = { version = "1", features = ["v4"] }
 url = "2"
 directories = "6.0"
+flate2 = "1"
+tar = { version = "0.4", default-features = false }
+regdiff-rs = { git = "https://github.com/bottlesdevs/regdiff-rs", rev = "3266ab15abca4ef470b1ec5797cfeaa24e003510" }
