@@ -78,6 +78,7 @@
 
         cargoLock = {
           lockFile = ./Cargo.lock;
+          allowBuiltinFetchGit = true;
         };
 
         strictDeps = true;
